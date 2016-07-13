@@ -4,14 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-
 import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Nikolay on 13.07.2016.
+ * Tests is user already exists on linkedin
  */
-
 
 public class ExistingUserTestCase {
     /**

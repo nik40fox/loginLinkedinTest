@@ -1,12 +1,12 @@
-import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
  * Created by Nikolay on 13.07.2016.
+ * Webdriver mechanics of request to linkedin for
+ * testcases from WrongFieldsTestCasesForWebDriver Class
  */
 
 public class ActionsByWebDriver {
@@ -33,7 +33,6 @@ public class ActionsByWebDriver {
         WebElement signUpButton = driver.findElement(By.xpath(".//*[@id='pagekey-uno-reg-guest" +
                 "-home']/div[2]/div[2]/div/div[2]" +
                 "/div/div/div/form/fieldset/button"));
-
 
         fNameField.sendKeys(fname);
         lNameField.sendKeys(lname);
