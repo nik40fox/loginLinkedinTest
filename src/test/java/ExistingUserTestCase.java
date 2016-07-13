@@ -15,6 +15,12 @@ public class ExistingUserTestCase {
     /**
      * This method opens linkedin, fills up registration form and check is
      * correct message displayed when this email is already exist
+     * Ask teacher, why this class runs correct just one of 2 or three times
+     * error
+     * org.junit.ComparisonFailure:
+     * Expected :Пытаетесь выполнить вход?
+     * Actual   :
+     * program reads text from page not every time
      */
     @Test
     public void openLinkedin() {

@@ -2,7 +2,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * Created by Nikolay on 13.07.2016. 
+ * Created by Nikolay on 13.07.2016.
  * Six testcases for checking messeges if user registration form was filled wrong
  */
 
