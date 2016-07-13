@@ -11,12 +11,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class ActionsByWebDriver {
     private final String URL = "http://www.linkedin.com/";
 
-    @Test
-    public void testPass(){
-        String s = openLinkedin("John", "Doe", "jsdfwe23424@gmail.com", "12345");
-        System.out.print(s);
-    }
-
     /**
      * This method takes next parameters to access linkedin home page and fill in registration form
      * and sign up as a new user
@@ -51,7 +45,7 @@ public class ActionsByWebDriver {
                 "div[1]/div/p/strong"));
 
         String check = errorMessage.getText();
+        driver.close();
         return check;
-
     }
 }

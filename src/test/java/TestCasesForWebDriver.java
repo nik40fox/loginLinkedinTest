@@ -59,5 +59,5 @@ public class TestCasesForWebDriver {
         String s = demo.openLinkedin("John", "Doe", "", "12345");
         Assert.assertEquals("Укажите свой адрес электронной почты", s);
     }
-    
+
 }

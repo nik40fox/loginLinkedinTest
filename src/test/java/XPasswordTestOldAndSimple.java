@@ -11,6 +11,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 
 public class XPasswordTestOldAndSimple {
+    /**
+     * This method opens linkedin, fills up registration form and check is
+     * correct message displayed when password isn't long enough
+     */
     @Test
     public void openLinkedin() {
         WebDriver driver = new FirefoxDriver();
@@ -22,8 +26,6 @@ public class XPasswordTestOldAndSimple {
         WebElement signUpButton = driver.findElement(By.xpath(".//*[@id='pagekey-uno-reg-guest" +
                                                                 "-home']/div[2]/div[2]/div/div[2]" +
                                                                 "/div/div/div/form/fieldset/button"));
-
-
         fNameField.sendKeys("John");
         lNameField.sendKeys("Doe");
         emailField.sendKeys("johndoe9876567897766@gmail.com");
@@ -36,5 +38,6 @@ public class XPasswordTestOldAndSimple {
 
         String check = errorMessage.getText();
         Assert.assertEquals("Пароль должен быть не менее 6 символов.", check);
+        driver.close();
     }
 }
