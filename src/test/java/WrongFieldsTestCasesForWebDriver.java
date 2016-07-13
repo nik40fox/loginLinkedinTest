@@ -4,7 +4,7 @@ import org.junit.Test;
 /**
  * Created by Nikolay on 13.07.2016.
  */
-public class TestCasesForWebDriver {
+public class WrongFieldsTestCasesForWebDriver {
     /**
      * Test completes successfully if correct message is displayed when
      * password is to short
@@ -59,5 +59,4 @@ public class TestCasesForWebDriver {
         String s = demo.openLinkedin("John", "Doe", "", "12345");
         Assert.assertEquals("Укажите свой адрес электронной почты", s);
     }
-
 }
