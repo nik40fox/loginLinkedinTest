@@ -59,4 +59,11 @@ public class WrongFieldsTestCasesForWebDriver {
         String s = demo.openLinkedin("John", "Doe", "", "12345");
         Assert.assertEquals("Укажите свой адрес электронной почты", s);
     }
+
+    @Test
+    public void testUserExist(){
+        ActionsByWebDriver demo = new ActionsByWebDriver();
+        String s = demo.openLinkedin("John", "Doe", "mc_valkir@mail.ru", "tiramisu");
+        Assert.assertEquals("Укажите свой адрес электронной почты", s);
+    }
 }
